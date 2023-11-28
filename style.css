@@ -25,6 +25,36 @@ blockquote {
     font-style: italic;
 }
 
+ul {
+    margin: 0 0 0 32px;
+    line-height: 1.6;
+    padding-right: 100px;
+  }
+  
+  .bien {
+    background-image: url(bien.png);
+    background-repeat: no-repeat;
+    background-position: 290px;
+    background-size: contain;
+    padding-right: 100px;
+  }
+  
+  .mal {
+    background-image: url(mal.png);
+    background-repeat: no-repeat;
+    background-position: 290px;
+    background-size: contain;
+    padding-right: 100px;
+  }
+  
+  .chat {
+    background-image: url(chat.png);
+    background-repeat: no-repeat;
+    background-position: 289px;
+    background-size: contain;
+    padding-right: 100px;
+  }
+
 q {
     font-style: italic;
 }
@@ -48,19 +78,28 @@ q {
     color: green;
 }
 
- p {
-    margin-right: 20px;
-    display: flex;
-  justify-content: flex-start; 
-  align-items: flex-start;
+figure {
+    float: left;
+    margin: 10px;
+}
+
+img {
+    max-width: 75%;
+    margin-right: 10px;
+}
+ figcaption {
+    text-align: justify;
  }
 
- img {
-    max-width: 100%;
-    margin-bottom: 10px;
-    float: left;
-    margin-right: 20px;
+
+figure img {
+    vertical-align: top;
+    max-width: 50%;
  }
+
+ figure figcaption { 
+    max-width: 75%;
+ } 
 
 tr:nth-child(even) {
     background-color: grey; 
@@ -98,4 +137,30 @@ tr:nth-child(odd) {
 
  h2 {
     text-align: left;
+ }
+
+section {
+    display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+ }
+
+ .bloc-img-1 {
+	flex-wrap: wrap;
+	justify-content: center;
+ }
+
+ .bloc-img-2 {
+
+ }
+
+ .bloc-img-3 {
+
+    flex-direction: row;
+ }
+
+ 
+
+ .chinese-dial {
+    max-width: 50%;
  }
